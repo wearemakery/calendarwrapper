@@ -1,4 +1,4 @@
 calendarwrapper
 ===============
 
-CalendarProvider for humans
+CalendarProvider for humans.
