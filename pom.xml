@@ -12,7 +12,7 @@
         <version>7</version>
     </parent>
 
-    <name>Retrogram</name>
+    <name>calendarwrapper</name>
     <description>calendarwrapper</description>
     <url>https://github.com/andraskindler/calendarwrapper</url>
 
