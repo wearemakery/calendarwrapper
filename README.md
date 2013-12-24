@@ -15,12 +15,12 @@ Usage
 Including in your app
 =====================
 
-Check out and maven install the hell out of it, build a jar and put it into the libs folder, or simply copy the required classes into the project
+Check out and maven install the hell out of it, build a jar and put it into the libs folder, or simply copy the required classes into the project.
 
 Other notices
 =============
 
-The lowest supported API level is 14 (Ice Cream Sandwich)
+The lowest supported API level is 14 (Ice Cream Sandwich).
 
 Developed by **Andras Kindler** (andraskindler@gmail.com)
 
