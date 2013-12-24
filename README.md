@@ -11,6 +11,8 @@ CalendarWrapper is a bundle of classes aimed at making communication with the Ca
 Usage
 =====
 
+Perform the object method calls on an async thread. Further information can be found in <a href="http://howrobotswork.wordpress.com/" target="blank_">this blog post</a>.
+
 
 Including in your app
 =====================
@@ -36,9 +38,9 @@ Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document, and changing it is allowed as long
 as the name is changed.
 
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
- 0. You just DO WHAT THE FUCK YOU WANT TO.
+0. You just DO WHAT THE FUCK YOU WANT TO.
 
 
