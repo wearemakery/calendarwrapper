@@ -23,7 +23,7 @@ public class Attendee {
     public Integer relationship;
     public Integer status;
 
-    public ContentValues mapToContentValues() {
+    protected ContentValues mapToContentValues() {
         final ContentValues contentValues = new ContentValues();
         if (id != null) contentValues.put(CalendarContract.Attendees._ID, id);
         if (eventID != null) contentValues.put(CalendarContract.Attendees.EVENT_ID, eventID);

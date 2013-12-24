@@ -29,7 +29,7 @@ public class Calendar {
     public String allowedAvailability;
     public String allowedAttendeeTypes;
 
-    public ContentValues mapToContentValues() {
+    protected ContentValues mapToContentValues() {
         final ContentValues contentValues = new ContentValues();
         if (id != null) contentValues.put(CalendarContract.Calendars._ID, id);
         if (accountName != null) contentValues.put(CalendarContract.Calendars.ACCOUNT_NAME, accountName);

@@ -53,7 +53,7 @@ public class Event {
     public Integer hasExtendedProperties;
     public String eventTimezone;
 
-    public ContentValues mapToContentValues() {
+    protected ContentValues mapToContentValues() {
         final ContentValues contentValues = new ContentValues();
 
         if (id != null) contentValues.put(CalendarContract.Events._ID, id);
@@ -208,6 +208,7 @@ public class Event {
 
     public int update(final ContentResolver contentResolver) {
         final ContentValues contentValues = mapToContentValues();
+        selfAttendeeStatus = null;
         contentResolver.update(ContentUris.withAppendedId(CalendarContract.Events.CONTENT_URI, id), contentValues, null, null);
         return id;
     }

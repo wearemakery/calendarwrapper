@@ -20,7 +20,7 @@ public class Reminder {
     public Integer minutesBefore;
     public Integer method;
 
-    public ContentValues mapToContentValues() {
+    protected ContentValues mapToContentValues() {
         final ContentValues contentValues = new ContentValues();
         if (id != null) contentValues.put(CalendarContract.Reminders._ID, id);
         if (eventId != null) contentValues.put(CalendarContract.Reminders.EVENT_ID, eventId);
