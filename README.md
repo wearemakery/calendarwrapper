@@ -24,7 +24,7 @@ Other notices
 
 The lowest supported API level is 14 (Ice Cream Sandwich).
 
-Developed by **Andras Kindler** (<a href="twitter.com/andraskindler" target="blank_">twitter.com/andraskindler</a>) and **Gyula Voros** (<a href="twitter.com/gyula_voros" target="blank_">twitter.com/gyula_voros</a>)
+Developed by **Andras Kindler** (<a href="https://twitter.com/andraskindler" target="blank_">twitter.com/andraskindler</a>) and **Gyula Voros** (<a href="https://twitter.com/gyula_voros" target="blank_">twitter.com/gyula_voros</a>)
 
 License
 =======
