@@ -11,7 +11,7 @@ CalendarWrapper is a bundle of classes aimed at making communication with the Ca
 Usage
 =====
 
-Perform the object method calls on an async thread. Further information can be found in <a href="http://howrobotswork.wordpress.com/" target="blank_">this blog post</a>.
+Perform the object method calls on an async thread. Further information can be found in <a href="http://howrobotswork.wordpress.com/2014/01/02/calendarwrapper-a-simple-and-uncomplete-library-above-the-calendarprovider/" target="blank_">this blog post</a>.
 
 
 Including in your app
