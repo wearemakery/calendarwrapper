@@ -1,4 +1,4 @@
-package com.inch.calendarwrapper;
+package com.getinch.calendarwrapper;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -89,6 +89,7 @@ public class Calendar {
         }
 
         final Cursor cursor = contentResolver.query(CalendarContract.Calendars.CONTENT_URI, tempList.toArray(new String[tempList.size()]), query, queryArgs, sortOrder);
+        cursor.moveToFirst();
 
         final List<Calendar> calendars = new ArrayList<Calendar>();
         while (cursor.moveToNext()) {
@@ -110,6 +111,7 @@ public class Calendar {
             }
             calendars.add(calendar);
         }
+        cursor.close();
 
         return calendars;
     }

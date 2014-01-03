@@ -1,4 +1,4 @@
-package com.inch.calendarwrapper;
+package com.getinch.calendarwrapper;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -57,7 +57,7 @@ public class Attendee {
         };
 
         final Cursor cursor = contentResolver.query(CalendarContract.Attendees.CONTENT_URI, attendeeProjection, query, queryArgs, sortOrder);
-
+        cursor.moveToFirst();
         final List<Attendee> attendees = new ArrayList<Attendee>();
         while (cursor.moveToNext()) {
             final Attendee attendee = new Attendee();
@@ -70,7 +70,7 @@ public class Attendee {
             attendee.status = cursor.getInt(6);
             attendees.add(attendee);
         }
-
+        cursor.close();
         return attendees;
     }
 

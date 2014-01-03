@@ -1,4 +1,4 @@
-package com.inch.calendarwrapper;
+package com.getinch.calendarwrapper;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -54,7 +54,7 @@ public class Reminder {
         };
 
         final Cursor cursor = contentResolver.query(CalendarContract.Reminders.CONTENT_URI, attendeeProjection, query, queryArgs, sortOrder);
-
+        cursor.moveToFirst();
         final List<Reminder> reminders = new ArrayList<Reminder>();
         while (cursor.moveToNext()) {
             final Reminder reminder = new Reminder();
@@ -64,7 +64,7 @@ public class Reminder {
             reminder.method = cursor.getInt(3);
             reminders.add(reminder);
         }
-
+        cursor.close();
         return reminders;
     }
 }

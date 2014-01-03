@@ -1,4 +1,4 @@
-package com.inch.calendarwrapper;
+package com.getinch.calendarwrapper;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -156,6 +156,8 @@ public class Event {
 
         final List<Event> result = new ArrayList<Event>();
 
+        cursor.moveToFirst();
+
         while (cursor.moveToNext()) {
             final Event event = new Event();
             event.id = cursor.getInt(0);
@@ -196,6 +198,8 @@ public class Event {
             }
             result.add(event);
         }
+
+        cursor.close();
 
         return result;
     }
